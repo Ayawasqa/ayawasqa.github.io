@@ -92,16 +92,16 @@ h2 {
 .hero svg { display: block; margin: 0 auto; width: min(60vw, 14rem); height: auto; }
 @media (prefers-reduced-motion: reduce) { .hero { display: block; } }
 
-/* Intro: es una capa que solo existe con html.intro (lo pone un script en <head>).
+/* Intro: la capa (.intro-layer) solo existe con html.intro. OJO: la capa no puede llamarse .intro, porque html.intro tambien casaria con `.intro{display:none}` y la pagina entera quedaba en negro (lo pone un script en <head>).
    Sin JS, o con movimiento reducido, el catálogo se ve directo. */
-.intro { display: none; }
+.intro-layer { display: none; }
 .intro-logo svg { display: block; width: min(78vw, calc(76vh * 0.887)); height: auto; }
 .saltar {
   position: absolute; right: 1rem; bottom: 1rem; min-height: 44px; min-width: 44px; padding: 0.6rem 1.1rem;
   background: transparent; color: var(--text); border: 1px solid #777; border-radius: 999px;
   font: inherit; font-size: 0.95rem; cursor: pointer;
 }
-html.intro .intro {
+html.intro .intro-layer {
   display: flex; position: fixed; inset: 0; z-index: 100; background: #000;
   align-items: center; justify-content: center; touch-action: none;
   animation: intro-out 0.4s var(--ease) 3s forwards;

@@ -6,7 +6,7 @@ import { withBase } from '../lib';
 const { title, description } = siteConfig;
 const og = new URL(withBase('og.png'), Astro.site).href;
 const url = new URL(withBase(''), Astro.site).href;
-const introScript = `(function(){var d=document.documentElement;d.classList.add('js');try{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;var k='${siteConfig.introKey}';if(sessionStorage.getItem(k))return;sessionStorage.setItem(k,'1');d.classList.add('intro')}catch(e){}})();`;
+const introScript = `(function(){var d=document.documentElement;d.classList.add('js');try{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;var k='${siteConfig.introKey}';if(sessionStorage.getItem(k))return;sessionStorage.setItem(k,'1');d.classList.add('intro');setTimeout(function(){d.classList.remove('intro')},3600)}catch(e){}})();`;
 ---
 <!doctype html>
 <html lang={siteConfig.lang}>

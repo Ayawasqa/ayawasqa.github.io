@@ -4,8 +4,8 @@ export const siteConfig = {
   base: '/ayawasqa-10/',
 
   name: 'Ayawasqa · Colección La Paz',
-  title: 'Colección La Paz · Catálogo Ayawasqa 10 años',
-  description: 'Catálogo de la Colección La Paz de Ayawasqa: colección nueva, colección antigua y bijutería. 2016–2026.',
+  title: 'Showroom 2026 · Colección La Paz — Ayawasqa 10 años',
+  description: 'Showroom 2026 · Colección La Paz — Ayawasqa 10 años',
   lang: 'es',
   locale: 'es_BO',
 

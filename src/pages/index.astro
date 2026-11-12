@@ -13,7 +13,7 @@ const skipScript = `(function(){var d=document.documentElement,l=document.getEle
 let primeras = 4;
 ---
 <Base>
-  <div id="intro" class="intro">
+  <div id="intro" class="intro-layer">
     <div class="intro-logo" aria-hidden="true" set:html={logoRaw} />
     <button type="button" class="saltar">Saltar</button>
   </div>
@@ -23,7 +23,7 @@ let primeras = 4;
     <div class="bar">
       <a class="brand" href="#inicio">
         <svg viewBox="-300 -520 600 1040" width="22" height="38" aria-hidden="true" focusable="false" set:html={xPaths} />
-        <span>Colección La Paz · Catálogo</span>
+        <span>Showroom 2026 · Colección La Paz</span>
       </a>
       <nav aria-label="Secciones">
         {secciones.map((s) => <a href={`#${s.id}`}>{s.nav}</a>)}
