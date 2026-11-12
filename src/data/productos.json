@@ -1,0 +1,632 @@
+[
+ {
+  "coleccion": "nueva",
+  "numero": 1,
+  "descripcion": "Porta tarjetas, piezas únicas",
+  "precio": 380
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 2,
+  "descripcion": "Porta tarjetas, tejidos complejos, piezas únicas",
+  "precio": 460
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 3,
+  "descripcion": "Billeteras, piezas únicas",
+  "precio": 580
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 4,
+  "descripcion": "Billeteras, tejidos complejos, piezas únicas",
+  "precio": 690
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 5,
+  "descripcion": "Billeteras dama, piezas únicas",
+  "precio": 890
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 6,
+  "descripcion": "Billeteras dama, tejidos complejos, piezas únicas",
+  "precio": 980
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 7,
+  "descripcion": "Chaucheras, piezas únicas",
+  "precio": 340
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 8,
+  "descripcion": "Chaucheras, tejidos complejos, piezas únicas",
+  "precio": 480
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 9,
+  "descripcion": "Kachuchas",
+  "precio": 320
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 10,
+  "descripcion": "Kachuchas con tejidos complejos",
+  "precio": 380
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 11,
+  "descripcion": "Collares para perritos talla S, 40 cm",
+  "precio": 450
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 12,
+  "descripcion": "Collares para perritos talla S, tejidos complejos, 40 cm",
+  "precio": 580
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 13,
+  "descripcion": "Collares para perritos talla M, 45 cm",
+  "precio": 480
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 14,
+  "descripcion": "Collares para perritos tejidos complejos talla M, 45 cm",
+  "precio": 520
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 15,
+  "descripcion": "Collares para perritos talla L, 50 cm",
+  "precio": 580
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 16,
+  "descripcion": "Collares para perritos, tejidos complejos talla L, 50 cm",
+  "precio": 660
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 17,
+  "descripcion": "Collares para perritos talla XL y XXL, 60 cm y 65 cm",
+  "precio": 680
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 18,
+  "descripcion": "Collares para gatitos con marca metálica",
+  "precio": 70
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 19,
+  "descripcion": "Collares para gatitos",
+  "precio": 50
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 20,
+  "descripcion": "Cinturón \"Uru\" dama, 71 cm",
+  "precio": 890
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 21,
+  "descripcion": "Cinturón unisex, tejido complejo, 85 cm",
+  "precio": 890
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 22,
+  "descripcion": "Pochette \"La Paz\"",
+  "precio": 1800
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 23,
+  "descripcion": "Cartera \"478\"",
+  "precio": 820
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 24,
+  "descripcion": "Cartera \"Ladera Black\", jet black",
+  "precio": 1600
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 25,
+  "descripcion": "Cartera \"Andes\"",
+  "precio": 580
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 26,
+  "descripcion": "Aretes \"Ñusta\"",
+  "precio": 680
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 27,
+  "descripcion": "Collar \"Ñusta\"",
+  "precio": 480
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 28,
+  "descripcion": "Aretes \"Bubbles Nayra\"",
+  "precio": 280
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 29,
+  "descripcion": "Aretes Kusillo",
+  "precio": 60
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 30,
+  "descripcion": "Aretes \"Mirador\"",
+  "precio": 100
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 31,
+  "descripcion": "Hebillas \"Carrusel\"",
+  "precio": 80
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 32,
+  "descripcion": "Broches \"Inti\"",
+  "precio": 100
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 33,
+  "descripcion": "Aretes \"Inti\"",
+  "precio": 280
+ },
+ {
+  "coleccion": "nueva",
+  "numero": 34,
+  "descripcion": "Aretes \"Inti\" pequeños",
+  "precio": 220
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 1,
+  "descripcion": "Baby Pochette \"Inti Tiwanaku\"",
+  "precio": 150
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 2,
+  "descripcion": "Porta tarjetas Pueblo Guarayo",
+  "precio": 220
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 3,
+  "descripcion": "Porta tarjetas, tejidos complejos, Pueblo Guarayo",
+  "precio": 280
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 4,
+  "descripcion": "Baby Pochettes Pueblo Guarayo",
+  "precio": 60
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 5,
+  "descripcion": "Billeteras Pueblo Guarayo",
+  "precio": 420
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 6,
+  "descripcion": "Hard Case Pueblo Guarayo",
+  "precio": 580
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 7,
+  "descripcion": "Cinturón dama Pueblo Guarayo",
+  "precio": 380
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 8,
+  "descripcion": "Cinturón hombre Pueblo Guarayo",
+  "precio": 480
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 9,
+  "descripcion": "Hip Pouch Pueblo Guarayo",
+  "precio": 680
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 10,
+  "descripcion": "Pochete M Pueblo Guarayo",
+  "precio": 720
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 11,
+  "descripcion": "Pochete S Pueblo Guarayo",
+  "precio": 580
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 12,
+  "descripcion": "Pochettes L Muela del Diablo",
+  "precio": 2020
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 13,
+  "descripcion": "Cartera Onda Huaraca",
+  "precio": 280
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 14,
+  "descripcion": "Pochettes Camiri",
+  "precio": 280
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 15,
+  "descripcion": "Baby Pochettes Camiri",
+  "precio": 320
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 16,
+  "descripcion": "Cinturón dama Amazonía",
+  "precio": 580
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 17,
+  "descripcion": "Cinturón hombre Amazonía",
+  "precio": 620
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 18,
+  "descripcion": "Hip Pouch Flat Amazonía",
+  "precio": 1200
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 19,
+  "descripcion": "Hip Pouch Amazonía S",
+  "precio": 680
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 20,
+  "descripcion": "Hip Pouch Amazonía L",
+  "precio": 750
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 21,
+  "descripcion": "Corbata Michi",
+  "precio": 380
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 22,
+  "descripcion": "Billetera Amazonas L",
+  "precio": 580
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 23,
+  "descripcion": "Billetera Amazonas",
+  "precio": 580
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 24,
+  "descripcion": "Billeteras Dama Andes",
+  "precio": 780
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 25,
+  "descripcion": "Chaucheras Amazonas",
+  "precio": 380
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 26,
+  "descripcion": "Billetera Amazonía Fly",
+  "precio": 480
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 27,
+  "descripcion": "Bolso Nopalito",
+  "precio": 620
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 28,
+  "descripcion": "Carterita Amazonía",
+  "precio": 980
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 29,
+  "descripcion": "Cartera Andes Multicolor",
+  "precio": 580
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 30,
+  "descripcion": "Cartera Nopal Andino",
+  "precio": 620
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 31,
+  "descripcion": "Cartera Crossover Amazonas",
+  "precio": 880
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 32,
+  "descripcion": "Cartera Kantuta",
+  "precio": 1680
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 33,
+  "descripcion": "Cartera sueño amazónico",
+  "precio": 2800
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 34,
+  "descripcion": "Mochila \"Sueños y dragones\"",
+  "precio": 2800
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 35,
+  "descripcion": "Pochettes S",
+  "precio": 680
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 36,
+  "descripcion": "Pochettes M",
+  "precio": 980
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 37,
+  "descripcion": "Pochettes L",
+  "precio": 1400
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 38,
+  "descripcion": "Pochettes XL",
+  "precio": 2200
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 39,
+  "descripcion": "Pochette Amazonía S",
+  "precio": 720
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 40,
+  "descripcion": "Pochette Amazonía M",
+  "precio": 850
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 41,
+  "descripcion": "Pochette Amazonía L",
+  "precio": 920
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 42,
+  "descripcion": "Estuche de computadora Air",
+  "precio": 950
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 43,
+  "descripcion": "Estuche de computadora Pro",
+  "precio": 1500
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 44,
+  "descripcion": "Kachuchas",
+  "precio": 380
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 45,
+  "descripcion": "Kachuchas compuestas",
+  "precio": 420
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 46,
+  "descripcion": "Sombrero LLallagua",
+  "precio": 860
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 47,
+  "descripcion": "Sombrero Potosí",
+  "precio": 980
+ },
+ {
+  "coleccion": "antigua",
+  "numero": 48,
+  "descripcion": "Sombrero Charazani",
+  "precio": 880
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 1,
+  "descripcion": "Collar Iconic Ayawasqa",
+  "precio": 150
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 2,
+  "descripcion": "Lazo Polivalente",
+  "precio": 220
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 3,
+  "descripcion": "Colla Bicentenario",
+  "precio": 280
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 4,
+  "descripcion": "Colla Diabla",
+  "precio": 250
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 5,
+  "descripcion": "Choker, tejido complejo",
+  "precio": 420
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 6,
+  "descripcion": "Llavero Bubbles Nayra",
+  "precio": 60
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 7,
+  "descripcion": "Bubbles Nayra",
+  "precio": 80
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 8,
+  "descripcion": "Antenitas High Power Unibola",
+  "precio": 60
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 9,
+  "descripcion": "Antenitas doble bola High power",
+  "precio": 70
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 10,
+  "descripcion": "Antenitas High Power con plumas",
+  "precio": 130
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 11,
+  "descripcion": "Aretes Puma Punku y Mezcalina",
+  "precio": 220
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 12,
+  "descripcion": "Medallón Diablada",
+  "precio": 1200
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 13,
+  "descripcion": "Mascapaicha Crown",
+  "precio": 2200
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 14,
+  "descripcion": "Chalina Nube",
+  "precio": 220
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 15,
+  "descripcion": "Chalina Tinku",
+  "precio": 220
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 16,
+  "descripcion": "Manchettes talla S (15 – 16,5 cm)",
+  "precio": 380
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 17,
+  "descripcion": "Manchettes talla S, tejidos antiguos",
+  "precio": 420
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 18,
+  "descripcion": "Manchettes talla M (17 – 17,5 cm)",
+  "precio": 380
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 19,
+  "descripcion": "Manchettes talla M (17 – 17,5 cm), tejidos antiguos y elaborados",
+  "precio": 420
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 20,
+  "descripcion": "Manchettes talla L (18 – 18,5 cm)",
+  "precio": 380
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 21,
+  "descripcion": "Manchettes talla L (18 – 18,5 cm), tejidos antiguos",
+  "precio": 420
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 22,
+  "descripcion": "Manchettes talla XL (19 – 19,5 cm)",
+  "precio": 380
+ },
+ {
+  "coleccion": "bijuteria",
+  "numero": 23,
+  "descripcion": "Manchettes talla XL (19 – 20 cm), tejidos antiguos y complejos",
+  "precio": 450
+ }
+]

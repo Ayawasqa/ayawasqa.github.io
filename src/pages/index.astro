@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/Base.astro';
+import Card from '../components/Card.astro';
+import logoRaw from '../components/Logo.svg?raw';
+import { productos, secciones } from '../lib';
+import { siteConfig } from '../site.config';
+
+// La X (los 2 primeros trazos del logo) para el encabezado.
+const xPaths = (logoRaw.match(/<path[^>]*\/>/g) ?? []).slice(0, 2).join('').replace(/ id="[^"]*"/g, '');
+// Logo estático (sin ids duplicados) para quien pide menos movimiento.
+const logoEstatico = logoRaw.replace(/ id="[^"]*"/g, '');
+const skipScript = `(function(){var d=document.documentElement,l=document.getElementById('intro');if(!l)return;function end(){if(!d.classList.contains('intro'))return;d.classList.remove('intro');try{sessionStorage.setItem('${siteConfig.introKey}','1')}catch(e){}}l.addEventListener('click',end);l.addEventListener('animationend',function(e){if(e.target===l)end()});document.addEventListener('keydown',function(e){if(e.key==='Escape'||e.key==='Enter')end()});var b=l.querySelector('button');if(b&&d.classList.contains('intro'))b.focus({preventScroll:true})})();`;
+let primeras = 4;
+---
+<Base>
+  <div id="intro" class="intro">
+    <div class="intro-logo" aria-hidden="true" set:html={logoRaw} />
+    <button type="button" class="saltar">Saltar</button>
+  </div>
+  <script is:inline set:html={skipScript}></script>
+
+  <header class="site-header">
+    <div class="bar">
+      <a class="brand" href="#inicio">
+        <svg viewBox="-300 -520 600 1040" width="22" height="38" aria-hidden="true" focusable="false" set:html={xPaths} />
+        <span>Colección La Paz · Catálogo</span>
+      </a>
+      <nav aria-label="Secciones">
+        {secciones.map((s) => <a href={`#${s.id}`}>{s.nav}</a>)}
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <h1 class="sr-only">{siteConfig.title}</h1>
+    <div class="hero" aria-hidden="true" set:html={logoEstatico} />
+    {secciones.map((s) => (
+      <section id={s.id} aria-labelledby={`t-${s.id}`}>
+        <h2 id={`t-${s.id}`}>{s.titulo}</h2>
+        <ul class="grid">
+          {productos.filter((p) => p.coleccion === s.id).map((p) => <Card p={p} eager={primeras-- > 0} />)}
+        </ul>
+      </section>
+    ))}
+  </main>
+
+  <footer class="site-footer">
+    <p>Consulta y compra con nuestro equipo aquí en la sala.</p>
+    <p class="firma">Ayawasqa · 2016–2026</p>
+  </footer>
+</Base>

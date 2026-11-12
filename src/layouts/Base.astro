@@ -1,0 +1,40 @@
+---
+import '../styles/global.css';
+import { siteConfig } from '../site.config';
+import { withBase } from '../lib';
+
+const { title, description } = siteConfig;
+const og = new URL(withBase('og.png'), Astro.site).href;
+const url = new URL(withBase(''), Astro.site).href;
+const introScript = `(function(){var d=document.documentElement;d.classList.add('js');try{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;var k='${siteConfig.introKey}';if(sessionStorage.getItem(k))return;sessionStorage.setItem(k,'1');d.classList.add('intro')}catch(e){}})();`;
+---
+<!doctype html>
+<html lang={siteConfig.lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" href={withBase('favicon.svg')} type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={url} />
+    <meta property="og:site_name" content={siteConfig.name} />
+    <meta property="og:locale" content={siteConfig.locale} />
+    <meta property="og:image" content={og} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Logo de Ayawasqa: 2016 · 10 años · 2026" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={og} />
+    <script is:inline set:html={introScript}></script>
+    {siteConfig.goatcounter && <script is:inline async data-goatcounter={`https://${siteConfig.goatcounter}.goatcounter.com/count`} src="https://gc.zgo.at/count.js"></script>}
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

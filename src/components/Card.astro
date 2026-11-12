@@ -1,0 +1,31 @@
+---
+import { Picture } from 'astro:assets';
+import type { Producto } from '../lib';
+import { bs } from '../lib';
+
+interface Props { p: Producto; eager?: boolean }
+const { p, eager = false } = Astro.props;
+
+const fotos = import.meta.glob<{ default: ImageMetadata }>('../assets/productos/*.jpg', { eager: true });
+const foto = fotos[`../assets/productos/${p.coleccion}-${p.numero}.jpg`]?.default;
+if (!foto) throw new Error(`Falta la foto de ${p.coleccion}-${p.numero}`);
+// Dos anchos, sin pasar del original.
+const widths = [Math.round(foto.width / 2), foto.width];
+---
+<li class="card">
+  <div class="frame">
+    <Picture
+      src={foto}
+      alt=""
+      widths={widths}
+      sizes="(min-width: 900px) 25vw, (min-width: 600px) 33vw, 50vw"
+      formats={['webp']}
+      fallbackFormat="jpg"
+      loading={eager ? 'eager' : 'lazy'}
+      decoding={eager ? 'auto' : 'async'}
+    />
+  </div>
+  <p class="cod">N.º {p.numero}</p>
+  <h3>{p.descripcion}</h3>
+  <p class="precio">{bs(p.precio)}</p>
+</li>
