@@ -7,7 +7,7 @@ interface Props { p: Producto; eager?: boolean }
 const { p, eager = false } = Astro.props;
 
 const fotos = import.meta.glob<{ default: ImageMetadata }>('../assets/productos/*.jpg', { eager: true });
-const foto = fotos[`../assets/productos/${p.coleccion}-${p.numero}.jpg`]?.default;
+const foto = fotos[`../assets/productos/${p.coleccion === 'antigua' ? 'clasicos' : p.coleccion}-${p.numero}.jpg`]?.default;
 if (!foto) throw new Error(`Falta la foto de ${p.coleccion}-${p.numero}`);
 // Dos anchos, sin pasar del original.
 const widths = [Math.round(foto.width / 2), foto.width];

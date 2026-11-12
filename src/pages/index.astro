@@ -26,7 +26,7 @@ let primeras = 4;
         <span>Showroom 2026 · Colección La Paz</span>
       </a>
       <nav aria-label="Secciones">
-        {secciones.map((s) => <a href={`#${s.id}`}>{s.nav}</a>)}
+        {secciones.map((s) => <a href={`#${s.anchor}`}>{s.nav}</a>)}
       </nav>
     </div>
   </header>
@@ -35,8 +35,8 @@ let primeras = 4;
     <h1 class="sr-only">{siteConfig.title}</h1>
     <div class="hero" aria-hidden="true" set:html={logoEstatico} />
     {secciones.map((s) => (
-      <section id={s.id} aria-labelledby={`t-${s.id}`}>
-        <h2 id={`t-${s.id}`}>{s.titulo}</h2>
+      <section id={s.anchor} aria-labelledby={`t-${s.anchor}`}>
+        <h2 id={`t-${s.anchor}`}>{s.titulo}</h2>
         <ul class="grid">
           {productos.filter((p) => p.coleccion === s.id).map((p) => <Card p={p} eager={primeras-- > 0} />)}
         </ul>

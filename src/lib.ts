@@ -10,10 +10,10 @@ export interface Producto {
 
 export const productos = data as Producto[];
 
-export const secciones: { id: Coleccion; titulo: string; nav: string }[] = [
-  { id: 'nueva', titulo: 'Colección Nueva', nav: 'Nueva' },
-  { id: 'antigua', titulo: 'Colección Antigua', nav: 'Antigua' },
-  { id: 'bijuteria', titulo: 'Bijutería', nav: 'Bijutería' },
+export const secciones: { id: Coleccion; anchor: string; titulo: string; nav: string }[] = [
+  { id: 'nueva', anchor: 'la-paz', titulo: 'Colección La Paz', nav: 'La Paz' },
+  { id: 'antigua', anchor: 'clasicos', titulo: 'Clásicos', nav: 'Clásicos' },
+  { id: 'bijuteria', anchor: 'bijuteria', titulo: 'Bijutería', nav: 'Bijutería' },
 ];
 
 /** «Bs 2.800»: separador de miles con punto. */
