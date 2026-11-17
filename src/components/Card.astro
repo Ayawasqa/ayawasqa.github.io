@@ -1,7 +1,7 @@
 ---
 import { Picture } from 'astro:assets';
 import type { Producto } from '../lib';
-import { bs } from '../lib';
+import { bs, WA } from '../lib';
 
 interface Props { p: Producto; eager?: boolean }
 const { p, eager = false } = Astro.props;
@@ -10,6 +10,8 @@ const fotos = import.meta.glob<{ default: ImageMetadata }>('../assets/productos/
 const foto = fotos[`../assets/productos/${p.coleccion === 'antigua' ? 'clasicos' : p.coleccion}-${p.numero}.jpg`]?.default;
 if (!foto) throw new Error(`Falta la foto de ${p.coleccion}-${p.numero}`);
 // Dos anchos, sin pasar del original.
+const nombreCol = p.coleccion === 'nueva' ? 'Colección La Paz' : p.coleccion === 'antigua' ? 'Clásicos' : 'Bijutería';
+const consulta = `${WA}?text=${encodeURIComponent(`Hola Ayawasqa, me interesa la pieza Código ${p.numero} de ${nombreCol}: ${p.descripcion}`)}`;
 const widths = [Math.round(foto.width / 2), foto.width];
 ---
 <li class="card">
@@ -28,4 +30,5 @@ const widths = [Math.round(foto.width / 2), foto.width];
   <p class="cod">Código {p.numero}</p>
   <h3>{p.descripcion}</h3>
   <p class="precio">{bs(p.precio)}</p>
+  <a class="consultar" href={consulta} target="_blank" rel="noopener" aria-label={`Consultar por WhatsApp la pieza Código ${p.numero} de ${nombreCol}`}>Consultar</a>
 </li>

@@ -16,6 +16,8 @@ export const secciones: { id: Coleccion; anchor: string; titulo: string; nav: st
   { id: 'bijuteria', anchor: 'bijuteria', titulo: 'Bijutería', nav: 'Bijutería' },
 ];
 
+export const WA = 'https://wa.me/59171538188';
+
 /** «Bs 2.800»: separador de miles con punto. */
 export const bs = (n: number) => `Bs ${String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.')}`;
 

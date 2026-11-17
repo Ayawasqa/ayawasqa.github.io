@@ -1,11 +1,11 @@
 export const siteConfig = {
   // Despliegue (se pueden sobreescribir con SITE_URL y BASE_PATH)
-  site: 'https://rivera-ernesto.github.io',
-  base: '/ayawasqa-10/',
+  site: 'https://ayawasqa.github.io',
+  base: '/',
 
-  name: 'Ayawasqa · Colección La Paz',
-  title: 'Showroom 2026 · Colección La Paz — Ayawasqa 10 años',
-  description: 'Showroom 2026 · Colección La Paz — Ayawasqa 10 años',
+  name: 'Ayawasqa · Catálogo',
+  title: 'Ayawasqa · Catálogo',
+  description: 'Catálogo de piezas tejidas de Ayawasqa: Colección La Paz, Clásicos y Bijutería.',
   lang: 'es',
   locale: 'es_BO',
 

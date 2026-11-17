@@ -14,7 +14,8 @@ const code = files.filter((f) => ['.html', '.css', '.js', '.svg'].includes(extna
 const codeBytes = code.reduce((n, f) => n + gz(f), 0);
 
 const html = readFileSync(join(dist, 'index.html'), 'utf8');
-const rel = (u) => join(dist, u.replace(/^\/[^/]+\//, '')); // quita la base
+const base = (process.env.BASE_PATH ?? '/').replace(/^\/*/, '/').replace(/\/*$/, '/');
+const rel = (u) => join(dist, u.startsWith(base) ? u.slice(base.length) : u.replace(/^\/[^/]+\//, '')); // quita la base
 const webpOf = (srcset) => {
   const best = srcset.split(',').map((s) => s.trim().split(/\s+/)).sort((a, b) => parseInt(b[1]) - parseInt(a[1]))[0][0];
   return rel(best);

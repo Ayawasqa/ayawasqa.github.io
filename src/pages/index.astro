@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Card from '../components/Card.astro';
 import logoRaw from '../components/Logo.svg?raw';
-import { productos, secciones } from '../lib';
+import { productos, secciones, WA } from '../lib';
 import { siteConfig } from '../site.config';
 
 // La X (los 2 primeros trazos del logo) para el encabezado.
@@ -23,7 +23,7 @@ let primeras = 4;
     <div class="bar">
       <a class="brand" href="#inicio">
         <svg viewBox="-300 -520 600 1040" width="22" height="38" aria-hidden="true" focusable="false" set:html={xPaths} />
-        <span>Showroom 2026 · Colección La Paz</span>
+        <span>Ayawasqa · Catálogo</span>
       </a>
       <nav aria-label="Secciones">
         {secciones.map((s) => <a href={`#${s.anchor}`}>{s.nav}</a>)}
@@ -33,6 +33,7 @@ let primeras = 4;
 
   <main id="inicio">
     <h1 class="sr-only">{siteConfig.title}</h1>
+    <p class="aviso">Piezas únicas, sujetas a disponibilidad.</p>
     <div class="hero" aria-hidden="true" set:html={logoEstatico} />
     {secciones.map((s) => (
       <section id={s.anchor} aria-labelledby={`t-${s.anchor}`}>
@@ -45,7 +46,7 @@ let primeras = 4;
   </main>
 
   <footer class="site-footer">
-    <p>Consulta y compra con nuestro equipo aquí en la sala.</p>
+    <p><a class="wa-pie" href={WA} target="_blank" rel="noopener">Consultas y compras por WhatsApp: +591 71538188</a></p>
     <p class="firma">Ayawasqa · 2016–2026</p>
   </footer>
 </Base>
